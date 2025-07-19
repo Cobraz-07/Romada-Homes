@@ -1,16 +1,21 @@
 ---
-
+import '../styles/global.css'
+import { Image } from 'astro:assets';
+import underlayImg from '../assets/img/underlay.jpg'
 ---
 
-<html lang="en">
+<html lang="en" class="w-screen h-screen">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Romada Homes</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="w-full h-full bg-blue-50 flex items-center justify-center overflow-hidden scale-150">
+		<div id="underlay-div" class="absolute opacity-5">
+			<Image src={underlayImg} alt="" priority />
+		</div>
+		<h1>Romada Homes</h1>
 	</body>
 </html>
