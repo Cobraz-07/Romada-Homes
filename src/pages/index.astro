@@ -14,19 +14,19 @@ import { Button } from "@/components/starwind/button";
 		<meta name="generator" content={Astro.generator} />
 		<title>Romada Homes</title>
 	</head>
-	<body class="w-full h-full bg-blue-50 flex items-center justify-center overflow-hidden min-[780px]:scale-150">
+	<body class="max-[400px]:w-full h-full bg-blue-50 flex items-center justify-center overflow-hidden min-[780px]:scale-150">
 		<div id="underlay-div" class="absolute opacity-5 max-[780px]:hidden">
 			<Image src={underlayImg} alt="" priority />
 		</div>
 		<div id="content-div" class="flex flex-col gap-20 justify-center items-center inter text-neutral-600 z-999">
 			<div id="text-div" class="flex flex-col">
-				<h1 class="!text-4xl max-[780px]:!text-5xl text-center merriweather !mb-4">Romada Homes</h1>
-				<p>Convierte tu alquiler en la entrada de tu futura casa</p>
-				<p class="text-[12px] m-auto">Muy pronto podrás acceder a nuestra plataforma</p>
+				<h1 class="!text-4xl max-[780px]:!text-5xl text-center merriweather !mb-4 mx-1">Romada Homes</h1>
+				<p class="max-[400px]:text-center mx-1">Convierte tu alquiler en la entrada de tu futura casa</p>
+				<p class="text-[12px] mx-1 text-center">Muy pronto podrás acceder a nuestra plataforma</p>
 			</div>
 			<div class="flex flex-col gap-2 justify-center items-center inter text-neutral-600 dark z-999">
-				<label for="email" class="text-sm">Déjanos tú E-mail y te avisamos en cuanto abramos</label>
-				<form class="flex gap-2" method="POST" action="https://formsubmit.co/Jaimeromero@romadahomes.com" >
+				<label for="email" class="text-sm text-center mx-1">Déjanos tú E-mail y te avisamos en cuanto abramos</label>
+				<form class="flex gap-2 mx-5" method="POST" action="https://formsubmit.co/Jaimeromero@romadahomes.com" >
 					<Input class="bg-neutral-50 !border-1 !border-neutral-800 text-neutral-800 shadow-lg" id="email" type="email" name="email" placeholder="ejemplo@ejemplo.xyz" size="md" /> 
 					<Button type="submit" variant='outline' class="shadow-lg">Enviar</Button>
 				</form>
