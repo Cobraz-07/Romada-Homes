@@ -1,36 +1,10 @@
 ---
-import '../styles/global.css'
-import { Image } from 'astro:assets';
-import underlayImg from '../assets/img/underlay.jpg'
-import { Input } from "@/components/starwind/input";
-import { Button } from "@/components/starwind/button";
+import BaseLayout from "@/layouts/BaseLayout.astro"
+import Header from "@/components/global/headers/Header.astro"
+import Hero from "@/components/landing/Hero.astro"
+import Info from "@/components/landing/Info.astro"
 ---
-
-<html lang="en" class="w-screen h-screen">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/underlay.jpg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Romada Homes</title>
-	</head>
-	<body class="max-[400px]:w-full h-full bg-blue-50 flex items-center justify-center overflow-hidden min-[780px]:scale-150">
-		<div id="underlay-div" class="absolute opacity-5 max-[780px]:hidden">
-			<Image src={underlayImg} alt="Underlay brand logo" priority />
-		</div>
-		<div id="content-div" class="flex flex-col gap-20 justify-center items-center inter text-neutral-600 z-999">
-			<div id="text-div" class="flex flex-col">
-				<h1 class="!text-4xl max-[780px]:!text-5xl max-[400px]:!text-4xl text-center merriweather !mb-4 mx-1">Romada Homes</h1>
-				<p class="max-[400px]:text-center max-[400px]:text-sm mx-2">Convierte tu alquiler en la entrada de tu futura casa</p>
-				<p class="text-[12px] mx-1 text-center">Muy pronto podrás acceder a nuestra plataforma</p>
-			</div>
-			<div class="flex flex-col gap-2 justify-center items-center inter text-neutral-600 dark z-999">
-				<label for="email" class="text-sm text-center mx-1">Déjanos tú E-mail y te avisamos en cuanto abramos</label>
-				<form class="flex gap-2 mx-5" method="POST" action="https://formsubmit.co/d2678c6c2b5da6a7a7bf3d5fa08f5c45" >
-					<Input class="bg-neutral-50 !border-1 !border-neutral-800 text-neutral-800 shadow-lg" id="email" type="email" name="email" placeholder="ejemplo@ejemplo.xyz" size="md" /> 
-					<Button type="submit" variant='outline' class="shadow-lg">Enviar</Button>
-				</form>
-			</div>
-		</div>
-	</body>
-</html>
+<BaseLayout title="Romada Homes | Inicio">
+	<Hero />
+	<Info />
+</BaseLayout>

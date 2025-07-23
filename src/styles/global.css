@@ -1,14 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import "tailwindcss";
 @import '../styles/starwind.css';
+
+:root {
+	--brand-color: #9CAF88;
+	--text-color: #141712;
+	--secondary-color: #C96A4A;
+	--terciary-color: #E8D8C3;
+	--text-green: #737D6E;
+}
 
 .inter {
 	font-family: "Inter", sans-serif;
 	font-optical-sizing: auto;
 }
 
-.merriweather {
-	font-family: "Merriweather", serif;
+.playfair {
+	font-family: "Playfair Display", serif;
 	font-optical-sizing: auto;
+}
+
+.hero-img {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(../assets/img/hero.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	max-height: 480px;
+	padding: 16px;
+	text-align: center;
+	border-radius: 12px;
+	opacity: 80%;
+}
+
+.info-card {
+	width: 220px;
 }
