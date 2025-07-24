@@ -1,0 +1,25 @@
+---
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/starwind/accordion";
+---
+
+<section class="flex flex-col items-center justify-center max-w-[960px] w-full">
+    <div id="title container" class="text-left w-full">
+        <h2 class="playfair text-[var(--brand-color)] text-[26px]/10 font-black">Preguntas Frecuentes</h2>
+    </div>
+    <div id="accordion-container" class="my-4 w-full">
+        <Accordion class="flex flex-col gap-3">
+            <AccordionItem value="item-1" class="rounded-[12px]">
+                <AccordionTrigger>What is Astro?</AccordionTrigger>
+                <AccordionContent>Astro is an web framework for building fast, scalable, and secure websites.</AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2" class="rounded-[12px]">
+                <AccordionTrigger>Why should I use Astro?</AccordionTrigger>
+                <AccordionContent>Astro provides a set of features that make it an ideal choice for building fast, scalable, and secure websites.</AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3" class="rounded-[12px]">
+                <AccordionTrigger>How do I get started with Astro?</AccordionTrigger>
+                <AccordionContent>To get started with Astro, follow the instructions in the documentation.</AccordionContent>
+            </AccordionItem>
+        </Accordion>
+    </div>
+</section>
