@@ -33,4 +33,12 @@ import infoImg4 from "@/assets/img/info4.jpg"
             <h5 class="text-[--text-green: #737D6E] text-[14px]/5">A partir del tercer año, puedes ejercer tu opción de compra con todas las ventajas acumuladas. Y si no quieres comprar antes, en el año 7 habrás ahorrado lo suficiente para pagar la entrada de tu vivienda y hacerla tuya.</h5>
         </li>
     </ul>
+    <script>
+        const list = document.getElementById("cards-container") as HTMLUListElement;
+
+        list.addEventListener('wheel', e => {
+            e.preventDefault();
+            list.scrollLeft += e.deltaY;
+        });
+    </script>
 </section>
