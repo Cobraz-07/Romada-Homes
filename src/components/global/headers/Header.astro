@@ -4,14 +4,16 @@ import headerImg from "@/assets/img/underlay.jpg"
 import { Icon } from 'astro-icon/components'
 ---
 
-<section class="flex items-center justify-between py-4 w-full bg-[var(--brand-color)]">
-    <div id="title-container" class="flex h-full items-center">
-        <Image src={headerImg} alt="Header brand image" class="w-12 h-12" />
-        <h1 class="text-[26px] text-white font-bold playfair">Romada Homes</h1>
-    </div>
-    <div id="navigation-container" class="my-2 mx-4">
-        <div id="hamburger-div">
-            <Icon name="menu" class="w-8 h-8" />
+<section class="flex justify-center py-4 w-full bg-[var(--brand-color)]">
+    <div class="flex items-center justify-between w-full max-w-[1280px]">
+        <div id="title-container" class="flex h-full items-center">
+            <Image src={headerImg} alt="Header brand image" class="w-12 h-12" />
+            <h1 class="text-[26px] text-white font-bold playfair">Romada Homes</h1>
+        </div>
+        <div id="navigation-container" class="my-2 mx-4">
+            <div id="hamburger-div">
+                <Icon name="menu" class="w-8 h-8" />
+            </div>
         </div>
     </div>
 </section>
