@@ -35,4 +35,6 @@
 
 .info-card {
 	width: 220px;
+	height: 188px;
+	flex-shrink: 0;
 }
