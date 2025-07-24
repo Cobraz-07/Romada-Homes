@@ -11,7 +11,7 @@ import infoImg4 from "@/assets/img/info4.jpg"
         <h2 class="playfair text-[var(--brand-color)] text-[36px]/10 font-black">Cómo funciona Romada Homes</h2>
         <h4 class="mt-2 mb-4">Tú eliges la vivienda y nosotros la compramos por ti, para que puedas mudarte desde el primer día como inquilino. Cada mes, una parte de tu alquiler se destina a ahorrar para la entrada de compra, permitiéndote vivir ya en la casa que quieres mientras avanzas hacia ser su propietario.</h4>
     </div>
-    <ul id="cards-container" class="flex mt-6 gap-4 w-full h-auto overflow-x-scroll">
+    <ul id="cards-container" class="flex mt-6 gap-4 w-full h-auto overflow-x-auto">
         <li class="info-card">
             <Image class="h-[136px] rounded-[12px]" src={infoImg1} alt="Imagen sobre el texto 1" />
             <h4 class="text-[16px]/6 font-medium mt-2">Empiezas con una entrada reducida</h4>
@@ -33,12 +33,4 @@ import infoImg4 from "@/assets/img/info4.jpg"
             <h5 class="text-[--text-green: #737D6E] text-[14px]/5">A partir del tercer año, puedes ejercer tu opción de compra con todas las ventajas acumuladas. Y si no quieres comprar antes, en el año 7 habrás ahorrado lo suficiente para pagar la entrada de tu vivienda y hacerla tuya.</h5>
         </li>
     </ul>
-    <script>
-        const list = document.getElementById("cards-container") as HTMLUListElement;
-
-        list.addEventListener('wheel', e => {
-            e.preventDefault();
-            list.scrollLeft += e.deltaY;
-        });
-    </script>
 </section>
