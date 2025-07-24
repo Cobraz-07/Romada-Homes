@@ -18,6 +18,10 @@
     {
       "name": "accordion",
       "version": "1.1.0"
+    },
+    {
+      "name": "dropdown",
+      "version": "1.0.3"
     }
   ]
 }
