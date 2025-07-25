@@ -2,14 +2,16 @@
 import Button from "../starwind/button"
 ---
 
-<section class="flex flex-col items-center justify-center max-w-[960px]">
-    <div id="image-container" class="hero-img aspect-square">
-        <h2 class="text-[28px] font-black text-white">Convierte tu alquiler en la entrada de tu futuro hogar</h2>
+<section class="flex flex-col items-center justify-center max-w-[960px] w-full">
+    <div id="image-container" class="hero-img z-10 aspect-square min-[740px]:flex min-[740px]:flex-col min-[740px]:justify-center min-[740px]:items-center">
+        <h2 class="text-[28px] font-black text-white min-[740px]:text-[48px]/15">Convierte tu alquiler en la entrada de tu futuro hogar</h2>
+        <h4 class="text-[18px]/6 max-[740px]:hidden text-white pb-4 pt-6.5 max-w-150">No tires tu dinero en un alquiler convencional. Con Romada Homes, utilizas parte de tu alquiler mensual para ahorrar y pagar tu futura vivienda.</h4>
+        <Button class="w-min bg-[#C96A4A] hover:bg-[#b85f41] rounded-[12px] shadow-lg py-3 px-5 max-[740px]:hidden mt-4" size="lg">Simula tu caso</Button>
     </div>
     <div id="description-container" class="mt-2 mb-4">
-        <h4 class="text-[16px]">No tires tu dinero en un alquiler convencional. Con Romada Homes, utilizas parte de tu alquiler mensual para ahorrar y pagar tu futura vivienda.</h4>
+        <h4 class="text-[16px] min-[740px]:hidden">No tires tu dinero en un alquiler convencional. Con Romada Homes, utilizas parte de tu alquiler mensual para ahorrar y pagar tu futura vivienda.</h4>
     </div>
     <div id="button-container">
-        <Button class="bg-[#C96A4A] hover:bg-[#b85f41] rounded-[12px] shadow-lg py-3 px-5" size="lg">Simula tu caso</Button>
+        <Button class="bg-[#C96A4A] hover:bg-[#b85f41] rounded-[12px] shadow-lg py-3 px-5 min-[740px]:hidden" size="lg">Simula tu caso</Button>
     </div>
 </section>
